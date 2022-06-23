@@ -1,0 +1,57 @@
+.landing-page {
+  font-family: $font-1;
+  .headline {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 4rem;
+      color: lighten($clr-1, 10%);
+      margin-top: 5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      margin: 1rem 0rem;
+      color: darken($bg-clr-1, 50%);
+    }
+    .earnings {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      span {
+        display: flex;
+        align-items: center;
+        color: darken($bg-clr-1, 50%);
+        font-weight: 700;
+        font-size: 1.2rem;
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    .getemail {
+      white-space: nowrap;
+      input {
+        padding: 1rem 2rem;
+        border: 0.1rem solid lighten($clr-1, 70%);
+        font-size: 1.2rem;
+        outline: none;
+        border-radius: 0.3rem;
+      }
+      button {
+        @include btnreset;
+        @include btnstyle;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .banner {
+    background: url("../Assets/HeroImage(Desktop).png") no-repeat;
+    background-size: 100% 100%;
+    width: 48rem;
+    height: 39rem;
+  }
+}

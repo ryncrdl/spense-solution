@@ -1,0 +1,25 @@
+footer{
+    margin-top: 3rem;
+    font-family: $font-1;
+    background: $clr-1;
+    width: 100%;
+    display: flex;
+    padding: 3rem 5%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    strong{
+        color: lighten($clr-1, 100%);
+        display: block;
+        margin-bottom: 0.5rem;
+            }
+         a,p{
+        color: lighten($clr-1, 50%);
+        text-decoration: none;
+        line-height: 1.5rem;
+        display: block;
+     }
+    section:nth-child(1){
+        width: 20rem;
+    }
+}

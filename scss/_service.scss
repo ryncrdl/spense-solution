@@ -1,0 +1,45 @@
+.service-1 {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  background: $bg-clr-1;
+  border-radius: $br-1;
+  padding: 3rem 5rem 0rem 5rem;
+  gap: 3rem;
+  font-family: $font-1;
+  .context {
+    align-self: center;
+    h2 {
+      font-size: 2.5rem;
+      color: lighten($clr-1, 10%);
+    }
+    p {
+      color: darken($bg-clr-1, 50%);
+      line-height: 2rem;
+      font-size: 1.1rem;
+      margin: 1rem 0rem;
+    }
+    a {
+      color: darken($bg-clr-1, 50%);
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+  }
+}
+.service-2 {
+  @extend .service-1;
+  margin: 3rem 0rem;
+  background: lighten($clr-1, 100%);
+  padding: 0rem;
+  .context {
+    justify-self: flex-end;
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+  img {
+    align-self: center;
+    width: 50%;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,31 @@
+.social-contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 5%;
+    &::-webkit-scrollbar{
+        height: 0.5rem;
+        border-radius: 0.3rem;
+    }
+    &::-webkit-scrollbar-track{
+    background: lighten($clr-1, 80%);
+    border-radius: 0.3rem;
+    }
+    &::-webkit-scrollbar-thumb
+    {
+        
+          background: lighten($clr-1, 50%);
+          border-radius: 0.3rem;
+          &:hover{
+            background: lighten($clr-1, 30%);  
+          }
+    }
+    a{
+    img{
+       width: 5rem;
+       height: 1.5rem;
+    }
+    }
+  
+}

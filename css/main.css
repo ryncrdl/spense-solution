@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+header {
+  font-family: "Cabin", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 30% 30% 30% 5%;
+      grid-template-columns: 5% 30% 30% 30% 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 3rem 0rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #f0eeeb;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header h2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+header nav {
+  justify-self: center;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header nav .login {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+}
+
+header nav .login a,
+header nav .login button {
+  font-size: 1.1rem;
+}
+
+header nav .login button {
+  border: none;
+  background: none;
+  outline: 0;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-weight: 500;
+  background: #000000;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+header .btnNav {
+  border: none;
+  background: none;
+  outline: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.landing-page {
+  font-family: "Cabin", sans-serif;
+}
+
+.landing-page .headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing-page .headline h2 {
+  font-size: 4rem;
+  color: #1a1a1a;
+  margin-top: 5rem;
+}
+
+.landing-page .headline p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 1rem 0rem;
+  color: #7e715e;
+}
+
+.landing-page .headline .earnings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.landing-page .headline .earnings span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7e715e;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.landing-page .headline .earnings span img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.landing-page .headline .getemail {
+  white-space: nowrap;
+}
+
+.landing-page .headline .getemail input {
+  padding: 1rem 2rem;
+  border: 0.1rem solid #b3b3b3;
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+.landing-page .headline .getemail button {
+  border: none;
+  background: none;
+  outline: 0;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-weight: 500;
+  background: #000000;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.landing-page .banner {
+  background: url("../Assets/HeroImage(Desktop).png") no-repeat;
+  background-size: 100% 100%;
+  width: 48rem;
+  height: 39rem;
+}
+
+.social-contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 5%;
+}
+
+.social-contact::-webkit-scrollbar {
+  height: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.social-contact::-webkit-scrollbar-track {
+  background: #cccccc;
+  border-radius: 0.3rem;
+}
+
+.social-contact::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 0.3rem;
+}
+
+.social-contact::-webkit-scrollbar-thumb:hover {
+  background: #4d4d4d;
+}
+
+.social-contact a img {
+  width: 5rem;
+  height: 1.5rem;
+}
+
+.service-1, .service-2 {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f0eeeb;
+  border-radius: 0.5rem;
+  padding: 3rem 5rem 0rem 5rem;
+  gap: 3rem;
+  font-family: "Cabin", sans-serif;
+}
+
+.service-1 .context, .service-2 .context {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.service-1 .context h2, .service-2 .context h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+}
+
+.service-1 .context p, .service-2 .context p {
+  color: #7e715e;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  margin: 1rem 0rem;
+}
+
+.service-1 .context a, .service-2 .context a {
+  color: #7e715e;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.service-2 {
+  margin: 3rem 0rem;
+  background: white;
+  padding: 0rem;
+}
+
+.service-2 .context {
+  justify-self: flex-end;
+}
+
+.service-2 .context h2 {
+  font-size: 2.2rem;
+}
+
+.service-2 img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 50%;
+  border-radius: 1rem;
+}
+
+footer {
+  margin-top: 3rem;
+  font-family: "Cabin", sans-serif;
+  background: #000000;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer strong {
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+footer a, footer p {
+  color: gray;
+  text-decoration: none;
+  line-height: 1.5rem;
+  display: block;
+}
+
+footer section:nth-child(1) {
+  width: 20rem;
+}
+
+footer {
+  margin-top: 3rem;
+  font-family: "Cabin", sans-serif;
+  background: #000000;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer strong {
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+footer a, footer p {
+  color: gray;
+  text-decoration: none;
+  line-height: 1.5rem;
+  display: block;
+}
+
+footer section:nth-child(1) {
+  width: 20rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .landing-page .headline h2 {
+    font-size: 3rem;
+  }
+  .landing-page .headline p {
+    font-size: 1rem;
+  }
+  .landing-page .headline .earnings span {
+    font-size: 1.1rem;
+  }
+  .landing-page .headline .getemail input {
+    font-size: 1.1rem;
+  }
+  .landing-page .headline .getemail button {
+    font-size: 1.2rem;
+  }
+  .service-1, .service-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .service-1 .context p, .service-2 .context p {
+    font-size: 1rem;
+  }
+  .service-1 img, .service-2 img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 70%;
+    height: 30rem;
+  }
+  .service-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .service-2 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .landing-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .landing-page .headline h2 {
+    width: 80%;
+    margin-top: -2rem;
+    font-size: 4rem;
+  }
+  .landing-page .headline p {
+    font-size: 1.2rem;
+  }
+  .landing-page .banner {
+    background: url("../Assets/HeroImage(Tablet).png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 38rem;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  body {
+    min-width: 420px;
+  }
+  header nav {
+    display: none;
+    grid-column: 1 / -1;
+    padding: 2rem;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 2.8rem;
+    left: 0;
+    right: 0;
+    gap: 1rem;
+    background: #f0eeeb;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    margin: 0.5rem;
+  }
+  header nav.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: -1;
+  }
+  header .btnNav {
+    display: block;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / 5;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .landing-page .headline h2 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .landing-page .headline p {
+    font-size: 1rem;
+  }
+  .landing-page .headline span {
+    font-size: 1.1rem;
+  }
+  .landing-page .headline .getemail {
+    white-space: nowrap;
+  }
+  .landing-page .headline .getemail input {
+    font-size: 1rem;
+  }
+  .landing-page .headline .getemail button {
+    font-size: 1rem;
+  }
+  .landing-page .banner {
+    background: url("../Assets/Hero Image (Mobile).png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .service-1, .service-2 {
+    padding: 0rem 1.5rem;
+    padding-top: 2rem;
+  }
+  .service-2 {
+    padding: 3rem 0rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+body .announcement {
+  background: #000000;
+  color: white;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+}
+
+body main {
+  background: #f0eeeb;
+  width: 100%;
+}
+
+body main .landing-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 3rem 0rem;
+  gap: 5rem;
+}
+/*# sourceMappingURL=main.css.map */
